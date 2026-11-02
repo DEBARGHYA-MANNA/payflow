@@ -1,0 +1,49 @@
+{
+  "id": "/?source=pwa",
+  "name": "PayFlow",
+  "short_name": "PayFlow",
+  "description": "PayFlow — a simulated digital banking and payments app. Send money, manage cards and review payment history. No real funds involved.",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "portrait-primary",
+  "background_color": "#06080E",
+  "theme_color": "#06080E",
+  "lang": "en-IN",
+  "dir": "ltr",
+  "categories": ["finance", "business", "productivity"],
+  "prefer_related_applications": false,
+  "icons": [
+    { "src": "./icons/icon-64.png", "sizes": "64x64", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-96.png", "sizes": "96x96", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-144.png", "sizes": "144x144", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./icons/maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "./icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Send money",
+      "short_name": "Send",
+      "description": "Start a new transfer",
+      "url": "./?action=send",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "My cards",
+      "short_name": "Cards",
+      "description": "Manage cards and limits",
+      "url": "./?action=cards",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Activity",
+      "short_name": "Activity",
+      "description": "Payment history",
+      "url": "./?action=history",
+      "icons": [{ "src": "./icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
